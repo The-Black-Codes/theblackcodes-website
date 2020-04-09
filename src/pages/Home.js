@@ -22,7 +22,7 @@ const Home = (props) => {
 
   return (
     <>
-      <JumbotronComponent pageTitle="Code, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
+      <JumbotronComponent pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
       <div className="container">
         <section>
           <Row>

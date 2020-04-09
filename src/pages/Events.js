@@ -5,7 +5,7 @@ import JumbotronComponent from '../components/Jumbotron';
 
 const Events = () => {
   return (
-    <div className="container-fluid">
+    <div>
       <JumbotronComponent pageTitle='Events Page' lead='Stay up on the latest events.' />
       <div className="row">
       {
@@ -18,7 +18,7 @@ const Events = () => {
         })
       }
       </div>
-    </div>
+    </div>   
   );
 }
 
