@@ -32,7 +32,7 @@ const FooterComponent = (props) => {
             <div className="mb-5 text-center">
               <h3 className="mb-5">Follow Us</h3>
               {/* Facebook */}
-              <a className="fb-ic">
+              <a href="https://www.facebook.com/theblackcodes01/" className="fb-ic">
                 <FontAwesomeIcon className='mx-3' size='6x' icon={faFacebook} />
               </a>
               {/* Twitter */}
@@ -49,7 +49,7 @@ const FooterComponent = (props) => {
               </a>
               {/* Github */}
               <a>
-              <FontAwesomeIcon className='mx-3' color='black' size='6x' icon={faGithub} />
+              <FontAwesomeIcon className='mx-3' size='6x' icon={faGithub} />
               </a>
             </div>
           </div>

@@ -19,7 +19,7 @@ const JumbotronComponent = (props) => {
         <hr className="my-3" />
         { isButton && (
           <p className="lead">
-            <Button outline color="secondary" onClick={() => props.history.push('/about')}>{props.buttonText}</Button>
+            <Button outline onClick={() => props.history.push('/about')}>{props.buttonText}</Button>
           </p>
         )
         }

@@ -75,6 +75,10 @@ h1, h2, h3 {
   font-family: $head-font;
 }
 
+.btn {
+  color: $prime-color;
+}
+
 // Navbar
 
 .navigation {
@@ -92,6 +96,11 @@ h1, h2, h3 {
 // Footer
 .page-footer {
   background-color: $prime-color;
+  color: white;
+
+  a {
+    color: white;
+  }
 }
 
 .footer-copyright {
