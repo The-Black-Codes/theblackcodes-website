@@ -4,11 +4,13 @@ import {
   CardTitle, CardSubtitle
 } from 'reactstrap';
 
-const CardComponent = ({ organizer }) => {
+const CardComponent = ({ organizer, imgType }) => {
+  const radius = imgType === 'roundedCircle' ? '50%' : '5%';
+
   return (
     <div>
       <Card>
-        <CardImg top width="100%" src={organizer.photo} alt="Card image cap" />
+        <CardImg top width="100%" src={organizer.photo} alt={organizer.name} style={{ borderRadius: radius }} />
         <CardBody>
           <CardTitle>
             <h3>{organizer.name}</h3>

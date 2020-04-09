@@ -13,12 +13,6 @@ const JumbotronComponent = (props) => {
   return (
     <div>
       <Jumbotron style={jumboStyles}>
-        <FontAwesomeIcon className='mx-3' color='lightblue' size='6x' icon={faTwitter} />
-        <FontAwesomeIcon className='mx-3' color='blue' size='6x' icon={faFacebook} />
-        <FontAwesomeIcon className='mx-3' color='brown' size='6x' icon={faInstagram} />
-        <FontAwesomeIcon className='mx-3' color='yellow' size='6x' icon={faSnapchat} />
-        <FontAwesomeIcon className='mx-3' color='red' size='6x' icon={faYoutube} />
-        <FontAwesomeIcon className='mx-3' color='black' size='6x' icon={faGithub} />
         <h1 className="display-3">{props.pageTitle}</h1>
         <p className="lead">{props.lead}</p>
         <hr className="my-3" />
