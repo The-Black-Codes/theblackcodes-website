@@ -1,0 +1,108 @@
+/////// FONT FAMILY ////////
+$head-font: 'Racho', cursive;
+$para-font: 'Raleway' sans-serif;
+
+////// FONT SIZE ////////
+$header-size: 3.5em;
+$alt-header: 2em;
+$para-size: 1.2em;
+
+///// SPACING //////
+$line-space: 1.3em;
+$letter-space: .12em;
+$word-spacing: .1em;
+
+/////// COLORS ///////
+$prime-color: #321A37;
+$seconday-color: #9966cc;
+$white: #fff;
+
+//////// lINEAR-GRADIENT /////////
+$cover: linear-gradient($seconday-color, $white);
+$rev-cover: linear-gradient($white, $seconday-color);
+$switch: linear-gradient(to right bottom, $seconday-color, $prime-color);
+
+////// Button CSS //////
+$btn-width: 110px;
+$btn-height: 35px;
+$btn-radius: 5px;
+$btn-border: none;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-block {
+  height: 100px;
+}
+
+
+h1, h2, h3 {
+  font-family: $head-font;
+}
+
+.btn {
+  color: $prime-color;
+}
+
+// Navbar
+
+.navigation {
+  background: $prime-color;
+}
+
+// Jumbotron
+.jumbotron {
+  background: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+.display-3 {
+  font-family: $head-font;
+}
+
+// Footer
+.page-footer {
+  background-color: $prime-color;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.footer-copyright {
+  background-color: $seconday-color;
+}

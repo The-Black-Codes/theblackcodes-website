@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-
+import '../App.scss';
 import logo from '../assets/images/BlackCodes.png';
 import routes from '../routes';
 
@@ -19,7 +19,7 @@ const NavBarComponent = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className="navigation" dark expand="md">
         <NavbarBrand href="/"><img src={logo} /></NavbarBrand>
         <NavbarToggler onClick={toggle} right />
         <Collapse isOpen={isOpen} navbar>
