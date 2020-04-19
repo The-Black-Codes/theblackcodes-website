@@ -9,7 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 import '../App.scss';
-import logo from '../assets/images/BlackCodes.png';
+import logo from './public/assets/images/BlackCodes.png';
 import routes from '../routes';
 
 const NavBarComponent = (props) => {
@@ -20,7 +20,7 @@ const NavBarComponent = (props) => {
   return (
     <div>
       <Navbar className="navigation" dark expand="md">
-        <NavbarBrand href="/"><img src={logo} /></NavbarBrand>
+        <NavbarBrand href="/"><img src={logo} alt="Black Codes Logo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} right />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
