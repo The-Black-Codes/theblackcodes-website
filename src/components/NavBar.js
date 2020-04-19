@@ -9,7 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 import '../App.scss';
-import logo from './public/assets/images/BlackCodes.png';
+import logo from '../assets/images/BlackCodes.png';
 import routes from '../routes';
 
 const NavBarComponent = (props) => {
