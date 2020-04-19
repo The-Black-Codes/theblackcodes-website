@@ -6,13 +6,17 @@ const ContactForm = (props) => {
     <Form>
       <FormGroup>
         <Label for="exampleEmail">Email</Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+        <Input type="email" name="email" id="exampleEmail" placeholder="Plese enter your email..." />
       </FormGroup>
       <FormGroup>
+        <Label for="name">Name</Label>
+        <Input type="text" name="name" id="name" placeholder="Please enter your Name..." />
+      </FormGroup>
+      {/* <FormGroup>
         <Label for="examplePassword">Password</Label>
         <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-      </FormGroup>
-      <FormGroup>
+      </FormGroup> */}
+      {/* <FormGroup>
         <Label for="exampleSelect">Select</Label>
         <Input type="select" name="select" id="exampleSelect">
           <option>1</option>
@@ -21,8 +25,8 @@ const ContactForm = (props) => {
           <option>4</option>
           <option>5</option>
         </Input>
-      </FormGroup>
-      <FormGroup>
+      </FormGroup> */}
+      {/* <FormGroup>
         <Label for="exampleSelectMulti">Select Multiple</Label>
         <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
           <option>1</option>
@@ -31,20 +35,20 @@ const ContactForm = (props) => {
           <option>4</option>
           <option>5</option>
         </Input>
-      </FormGroup>
+      </FormGroup> */}
       <FormGroup>
-        <Label for="exampleText">Text Area</Label>
-        <Input type="textarea" name="text" id="exampleText" />
+        <Label for="exampleText">Message</Label>
+        <Input type="textarea" name="text" id="exampleText" placeholder="Please leave us a message..." />
       </FormGroup>
-      <FormGroup>
+      {/* <FormGroup>
         <Label for="exampleFile">File</Label>
         <Input type="file" name="file" id="exampleFile" />
         <FormText color="muted">
           This is some placeholder block-level help text for the above input.
           It's a bit lighter and easily wraps to a new line.
         </FormText>
-      </FormGroup>
-      <FormGroup tag="fieldset">
+      </FormGroup> */}
+      {/* <FormGroup tag="fieldset">
         <legend>Radio Buttons</legend>
         <FormGroup check>
           <Label check>
@@ -70,7 +74,7 @@ const ContactForm = (props) => {
           <Input type="checkbox" />{' '}
           Check me out
         </Label>
-      </FormGroup>
+      </FormGroup> */}
       <Button>Submit</Button>
     </Form>
   );
