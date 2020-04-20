@@ -106,3 +106,32 @@ h1, h2, h3 {
 .footer-copyright {
   background-color: $seconday-color;
 }
+
+//////// ABOUT PAGE ////////
+.aboutUs {
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &.about-img {
+    background-image: url(./assets/images/BlackCodes.png);
+  }
+}
+
+.mission-state {
+  background: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  max-width: 100vw;
+  height: 25vh;
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+  }
+
+  p {
+    font-family: $para-font;
+    font-size: $para-size;
+  }
+}
+
