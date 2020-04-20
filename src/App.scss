@@ -14,13 +14,15 @@ $word-spacing: .1em;
 
 /////// COLORS ///////
 $prime-color: #321A37;
-$seconday-color: #9966cc;
+$secondary-color: #9966cc;
 $white: #fff;
 
 //////// lINEAR-GRADIENT /////////
-$cover: linear-gradient($seconday-color, $white);
-$rev-cover: linear-gradient($white, $seconday-color);
-$switch: linear-gradient(to right bottom, $seconday-color, $prime-color);
+$cover: linear-gradient($secondary-color, $white);
+$rev-cover: linear-gradient($white, $secondary-color);
+$switch: linear-gradient(to right bottom, $secondary-color, $prime-color);
+$gradient-primary: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+$gradient-secondary: linear-gradient(122.32deg, rgba(229, 229, 229, 0.75) 0%, rgba(59, 35, 93, 0.75) 100%);
 
 ////// Button CSS //////
 $btn-width: 110px;
@@ -66,10 +68,6 @@ $btn-border: none;
   }
 }
 
-.contact-block {
-  height: 100px;
-}
-
 
 h1, h2, h3 {
   font-family: $head-font;
@@ -79,19 +77,75 @@ h1, h2, h3 {
   color: $prime-color;
 }
 
-// Navbar
+// Navigation
 
 .navigation {
   background: $prime-color;
 }
 
+// Homepage
+
 // Jumbotron
 .jumbotron {
-  background: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: $gradient-primary;
 }
+
 .display-3 {
   font-family: $head-font;
 }
+
+// About Block
+
+#home-about {
+  height: 50vh;
+  margin-top: 50px;
+
+  .container {
+    align-self: center;
+  
+  }
+}
+
+// Event Block
+
+#home-updates {
+  height: 60vh;
+  background: #E5E5E5;
+}
+
+// Contact Block
+
+#home-contact {
+  background: $gradient-secondary;
+  
+  height: 50vh;
+
+  h2 {
+    font-family: $head-font;
+    font-size: $alt-header;
+  }
+
+  button {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: $para-font;
+    background: #E5E5E5;
+  }
+}
+
+// Organizer Block
+
+#organizers {
+  margin: 100px 0px;
+}
+
+.card {
+  border: none !important;
+}
+
+// Contact Page
+
+
 
 // Footer
 .page-footer {
@@ -104,5 +158,5 @@ h1, h2, h3 {
 }
 
 .footer-copyright {
-  background-color: $seconday-color;
+  background-color: $secondary-color;
 }

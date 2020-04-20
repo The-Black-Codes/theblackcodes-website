@@ -1,7 +1,5 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faInstagram, faSnapchat, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../App.scss';
 
 // const jumboStyles = {
