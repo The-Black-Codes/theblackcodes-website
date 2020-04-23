@@ -83,6 +83,22 @@ h1, h2, h3 {
   background: $prime-color;
 }
 
+.navbar-brand {
+
+  img {
+    height: 65;
+    width: 65;
+  }
+}
+
+nav-item {
+  font-size: $header-size;
+}
+
+.nav-link:hover {
+  color: #9966cc !important;
+}
+
 // Homepage
 
 // Jumbotron
@@ -103,6 +119,9 @@ h1, h2, h3 {
   .container {
     align-self: center;
   
+    h2 {
+      margin-top: 50px;
+    }
   }
 }
 
