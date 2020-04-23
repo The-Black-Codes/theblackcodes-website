@@ -32,11 +32,7 @@ const Home = (props) => {
         </section>
         <section id="home-updates">
           <div className="container">
-          <Row>
-            <Col>
               <h2>Events</h2>
-            </Col>
-          </Row>
           <Row>
           {
             headerCards.map((header, index) => {
