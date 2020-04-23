@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'reactstrap';
 import { events } from '../db/events';
 import CardComponent from '../components/EventCard';
 import JumbotronComponent from '../components/Jumbotron';
@@ -7,17 +8,18 @@ const Events = () => {
   return (
     <div>
       <JumbotronComponent pageTitle='Events Page' lead='Stay up on the latest events.' />
-      <div className="row">
+      <Row>
       {
-        events.map((event) => {
+        events.map((event, index) => {
           return (
-            <div key={event.id} className="col col-3 my-3">
+            <Col key={index} md={3} xs={12} >
               <CardComponent event={event} />
-            </div>
+              <hr />
+            </Col>
           )
         })
       }
-      </div>
+      </Row>
     </div>   
   );
 }
