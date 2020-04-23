@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Image } from 'reactstrap';
+import { Container, Row, Col, Image } from 'reactstrap';
 
 import CardComponent from '../components/Card';
 import JumbotronComponent from '../components/Jumbotron';
@@ -31,25 +31,24 @@ const Home = (props) => {
           </div>
         </section>
         <section id="home-updates">
-          <div className="container">
-          <Row>
-            <Col>
-              <h2>Events</h2>
-            </Col>
-          </Row>
-          <Row>
-          {
-            headerCards.map((header, index) => {
-              return (
-                <Col key={index} md={4} xs={12} >
-                  <CardComponent organizer={header} imgType='rounded' />
-                </Col>
-              )
-            })
-          }
-          </Row>
-          </div>
-          
+          <Container>
+            <Row>
+              <Col>
+                <h2>Events</h2>
+              </Col>
+            </Row>
+            <Row>
+            {
+              headerCards.map((header, index) => {
+                return (
+                  <Col key={index} md={4} xs={12} >
+                    <CardComponent organizer={header} imgType='rounded' />
+                  </Col>
+                )
+              })
+            }
+            </Row>
+          </Container>
         </section>
         <section id="home-contact">
           <Row>
