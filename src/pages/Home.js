@@ -31,23 +31,6 @@ const Home = (props) => {
           </div>
         </section>
         <section id="home-updates">
-<<<<<<< HEAD
-          <div className="container">
-              <h2>Events</h2>
-          <Row>
-          {
-            headerCards.map((header, index) => {
-              return (
-                <Col key={index} md={4} xs={12} >
-                  <CardComponent organizer={header} imgType='rounded' />
-                </Col>
-              )
-            })
-          }
-          </Row>
-          </div>
-          
-=======
           <Container>
             <Row>
               <Col>
@@ -66,7 +49,6 @@ const Home = (props) => {
             }
             </Row>
           </Container>
->>>>>>> be7ab350652161adf1421d733e6d35bba88d21c8
         </section>
         <section id="home-contact">
           <Row>
