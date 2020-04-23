@@ -128,8 +128,7 @@ nav-item {
 // About Block
 
 #home-about {
-  height: 50vh;
-  margin-top: 50px;
+  padding: 50px 0px 50px;
 
   .container {
     align-self: center;
@@ -143,14 +142,14 @@ nav-item {
 // Event Block
 
 #home-updates {
-  height: 60vh;
-  background: #E5E5E5;
+  background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
+  padding: 50px 0px 50px;
 }
 
 // Contact Block
 
 #home-contact {
-  background: $gradient-secondary;
+  background: rgba(59, 35, 93, 0.3); //$gradient-secondary;
   
   height: 50vh;
 
