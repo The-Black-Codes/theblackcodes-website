@@ -118,6 +118,13 @@ nav-item {
 // Jumbotron
 .jumbotron {
   background: $gradient-primary;
+  background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);   
+  background-size: cover;   
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  background-position: center center;   
+  //max-width: 100vw;   
+  //height: 35vh;
   border-radius: 0 !important;
 }
 
@@ -128,7 +135,7 @@ nav-item {
 // About Block
 
 #home-about {
-  padding: 50px 0px 50px;
+  margin-bottom: 40px;
 
   .container {
     align-self: center;
@@ -144,6 +151,13 @@ nav-item {
 #home-updates {
   background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
   padding: 50px 0px 50px;
+
+    h2 {
+      margin-bottom: 25px;
+    }
+    .card {
+      margin-bottom: 25px;
+    }
 }
 
 // Contact Block

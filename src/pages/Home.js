@@ -22,7 +22,7 @@ const Home = (props) => {
 
   return (
     <>
-      <JumbotronComponent pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
+      <JumbotronComponent pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
       <div>
         <section id="home-about">
           <div className="container">
@@ -53,8 +53,8 @@ const Home = (props) => {
         <section id="home-contact">
           <Row>
             <Col>
-              <h2 className="pt-5">Reach out to Us!</h2>
-              <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h2 className="pt-5">Reach Out to Us!</h2>
+              <p className="mt-5">Are you looking to connect with us? Join our community of Black Devs! Do you have a project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <button className="btn" onClick={() => props.history.push('/contact')}>Contact us</button>
             </Col> 
           </Row>
