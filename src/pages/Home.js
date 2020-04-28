@@ -26,7 +26,7 @@ const Home = (props) => {
       <div>
         <section id="home-about">
           <div className="container">
-            <h2>About Section</h2>
+            {/* <h2>About Section</h2> */}
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium viverra suspendisse potenti nullam. Hac habitasse platea dictumst vestibulum rhoncus. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Porta lorem mollis aliquam ut porttitor leo a.</p>
           </div>
         </section>
@@ -53,8 +53,8 @@ const Home = (props) => {
         <section id="home-contact">
           <Row>
             <Col>
-              <h2 className="pt-5">Reach Out to Us!</h2>
-              <p className="mt-5">Are you looking to connect with us? Join our community of Black Devs! Do you have a project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              {/* <h2 className="mt-5">Reach Out to Us!</h2> */}
+              <p>Are you looking to connect with us? Join our community of Black Devs! Do you have a project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <button className="btn" onClick={() => props.history.push('/contact')}>Contact us</button>
             </Col> 
           </Row>

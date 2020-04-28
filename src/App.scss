@@ -105,10 +105,6 @@ h1, h2, h3 {
   }
 }
 
-nav-item {
-  
-}
-
 .nav-link {
   color: white !important;
   font-size: $para-size;
@@ -123,8 +119,7 @@ nav-item {
 
 // Jumbotron
 .jumbotron {
-  //background: $gradient-primary;
-  background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);   
+  background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);   
   background-size: cover;   
   background-repeat: no-repeat;   
   //background-attachment: fixed;   
@@ -132,6 +127,17 @@ nav-item {
   //max-width: 100vw;   
   //height: 35vh;
   border-radius: 0 !important;
+
+  .lead {
+    font-weight: bold;
+    color: white;
+  }
+
+  hr {
+    color: white !important;
+    width: 300px;
+    border-top: 5px double;
+  }
 
   .btn {
     background-color: #3B235D !important;
@@ -180,23 +186,24 @@ nav-item {
 // Contact Block
 
 #home-contact {
-  background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);   
+  background-image: $gradient-secondary, url(./assets/images/wide-angle_kindful.jpg);   
   background-size: cover;   
   background-repeat: no-repeat;   
   //background-attachment: fixed;   
   background-position: center center;   
   height: 50vh;
 
-  h2 {
-    font-family: $head-font;
-    font-size: $alt-header;
-    color: white;
-  }
+  // h2 {
+  //   font-family: $head-font;
+  //   font-size: $alt-header;
+  //   color: white;
+  // }
 
   p {
-    padding: 0px 70px;
+    padding: 0px 15%;
     color: white;
-    font-size: $para-size;
+    font-size: $alt-header;
+    margin: 115px 0px 25px 0px;
   }
 
   button {
@@ -235,6 +242,10 @@ nav-item {
   a {
     color: white;
   }
+
+  a:hover {
+    color: #9966cc;
+  }
 }
 
 .footer-copyright {
@@ -242,6 +253,7 @@ nav-item {
 }
 
 //////// ABOUT PAGE ////////
+
 .aboutUs {
   width: 100%;
   text-align: center;
@@ -289,5 +301,13 @@ nav-item {
 
   .display-3 {
     font-size: 2.5em !important;
+  }
+
+  
+}
+
+@media screen and (max-width: 850px) {
+  #home-contact {
+    height: 90vh;
   }
 }
