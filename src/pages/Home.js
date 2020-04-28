@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 import CardComponent from '../components/Card';
 import JumbotronComponent from '../components/Jumbotron';
@@ -24,7 +24,7 @@ const Home = (props) => {
 
   return (
     <div id="home">
-      <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
+      <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
         <section id="home-about">
           <div className="container">
             <h2>{content.homepageAbout}</h2>
@@ -53,8 +53,8 @@ const Home = (props) => {
         <section id="home-contact">
           <Row>
             <Col>
-              <h2 className="pt-5">Reach out to Us!</h2>
-              <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              {/* <h2 className="mt-5">Reach Out to Us!</h2> */}
+              <p>Are you looking to connect with us? Join our community of Black Devs! Do you have a project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <button className="btn" onClick={() => props.history.push('/contact')}>Contact us</button>
             </Col> 
           </Row>
