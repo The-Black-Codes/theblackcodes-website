@@ -4,12 +4,14 @@ import { Container, Row, Col, Image } from 'reactstrap';
 import CardComponent from '../components/Card';
 import JumbotronComponent from '../components/Jumbotron';
 import { organizers } from '../db/organizers';
+import content from "../siteContent.json";
 
 const Home = (props) => {
+  console.log(content);
   const headerCards = [{
-    name: 'Header 1',
-    title: 'This is the header',
-    photo: 'https://via.placeholder.com/150'
+    name: 'The Virtual Hack-a-thon',
+    title: 'Monthly Hack-a-thon',
+    photo: 'https://res.cloudinary.com/fletchlab/image/upload/v1588018695/theblackcodes/website_images/TBC_Virtual_Hack-a-thon_hraonb.jpg'
   }, {
     name: 'Header 2',
     title: 'This is the header',
@@ -21,13 +23,11 @@ const Home = (props) => {
   }];
 
   return (
-    <>
-      <JumbotronComponent pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
-      <div>
+    <div id="home">
+      <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
         <section id="home-about">
           <div className="container">
-            <h2>About Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium viverra suspendisse potenti nullam. Hac habitasse platea dictumst vestibulum rhoncus. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Porta lorem mollis aliquam ut porttitor leo a.</p>
+            <h2>{content.homepageAbout}</h2>
           </div>
         </section>
         <section id="home-updates">
@@ -73,8 +73,7 @@ const Home = (props) => {
             }
           </Row>
         </section>
-      </div>
-    </>
+    </div>
   );
 }
 

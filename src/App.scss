@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 /////// FONT FAMILY ////////
 $head-font: 'Racho', cursive;
 $para-font: 'Raleway' sans-serif;
@@ -114,12 +116,18 @@ nav-item {
 }
 
 // Homepage
+#home {
+  .jumbotron {
+    background: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg) center bottom;
+    border-radius: 0 !important;
+  }
+}
 
 // Jumbotron
-.jumbotron {
-  background: $gradient-primary;
-  border-radius: 0 !important;
-}
+// .jumbotron {
+//   background: $gradient-primary;
+//   border-radius: 0 !important;
+// }
 
 .display-3 {
   font-family: $head-font;
@@ -128,13 +136,14 @@ nav-item {
 // About Block
 
 #home-about {
-  padding: 50px 0px 50px;
+  padding-bottom: 50px;
 
   .container {
     align-self: center;
   
     h2 {
       margin-top: 50px;
+      font-family: 'Raleway', sans-serif;
     }
   }
 }
@@ -178,7 +187,33 @@ nav-item {
 
 // Contact Page
 
+///// Events Page /////
+#events {
+  font-family: 'Raleway', sans-serif;
 
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/fletchlab/image/upload/y_100/v1588020688/theblackcodes/website_images/image5_eiy8u2.jpg) center bottom;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+  }
+  
+  h1 {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 40px;
+  }
+
+  h4 {
+    font-weight: 300;
+  }
+
+  .date {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+  }
+}
 
 // Footer
 .page-footer {

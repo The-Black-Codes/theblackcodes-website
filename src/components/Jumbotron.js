@@ -10,19 +10,17 @@ import '../App.scss';
 const JumbotronComponent = (props) => {
   const isButton = props.buttonText || '';
   return (
-    <div>
-      <Jumbotron>
-        <h1 className="display-3">{props.pageTitle}</h1>
-        <p className="lead">{props.lead}</p>
-        <hr className="my-3" />
-        { isButton && (
-          <p className="lead">
-            <Button outline onClick={() => props.history.push('/about')}>{props.buttonText}</Button>
-          </p>
-        )
-        }
-      </Jumbotron>
-    </div>
+    <Jumbotron>
+      <h1 className="display-3">{props.pageTitle}</h1>
+      {/* <p className="lead">{props.lead}</p> */}
+      <hr className="my-3" />
+      { isButton && (
+        <p className="lead">
+          <Button outline onClick={() => props.history.push('/about')}>{props.buttonText}</Button>
+        </p>
+      )
+      }
+    </Jumbotron>
   );
 };
 
