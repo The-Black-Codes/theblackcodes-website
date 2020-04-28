@@ -36,19 +36,19 @@ const FooterComponent = (props) => {
                 <FontAwesomeIcon className='mx-3' size='6x' icon={faFacebook} />
               </a>
               {/* Twitter */}
-              <a className="tw-ic">
+              <a href="https://twitter.com/theblackcodes1" className="tw-ic">
               <FontAwesomeIcon className='mx-3' size='6x' icon={faTwitter} />
               </a>
               {/* Linkedin */}
-              <a className="li-ic">
+              <a href="https://www.linkedin.com/company/the-black-codes/?viewAsMember=true" className="li-ic">
               <FontAwesomeIcon className='mx-3' size='6x' icon={faLinkedin} />
               </a>
               {/* Instagram */}
-              <a className="ins-ic">
+              <a href="https://www.instagram.com/theblack.codes/" className="ins-ic">
               <FontAwesomeIcon className='mx-3' size='6x' icon={faInstagram} />
               </a>
               {/* Github */}
-              <a>
+              <a href="https://github.com/The-Black-Codes">
               <FontAwesomeIcon className='mx-3' size='6x' icon={faGithub} />
               </a>
             </div>
