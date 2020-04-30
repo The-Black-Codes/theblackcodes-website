@@ -10,6 +10,7 @@ $link-size: 1em;
 $alt-header: 2em;
 $alt-header-size: 2.8em;
 
+$para-small: 1em;
 $para-size: 1.2em;
 $alt-para-size: 1.9em;
 
@@ -274,22 +275,9 @@ h1, h2, h3 {
 //////// ABOUT PAGE ////////
 .about-section {
   width: 100%;
-  //height: 100vh;
-  
-  .about-img {
-    background-image: url(./assets/images/portrait.jpg);
-    width: 100%;
-    //height: 100vh;
-    background-size: cover;
-    background-position: 50% 100%;
-  }
+  display: flex;
+  justify-content: center;
 
-  .about-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
   h2 {
     font-family: $head-font;
     font-size: $header-size;
@@ -299,10 +287,14 @@ h1, h2, h3 {
   
   p {
     font-family: $para-font;
-    font-size: $alt-header;
+    font-size: $para-size;
+    font-weight: 700;
     line-height: $alt-line-space;
   }
 }
+
+
+/////////////////////// Mission Statement ///////////////////
 
 .mission-state {
   background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);
@@ -310,10 +302,14 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h2 {
     font-size: $header-size;
-    margin: 10px 0 20px 0;
+    margin: 0 0 30px 0;
+    text-align: center;
 
   }
 
@@ -325,6 +321,10 @@ h1, h2, h3 {
 
 
 ////////////// We Do Section //////////////
+.three-sections {
+
+}
+
 .section {
   // height: 50vh;
   // margin: 70px 0 60px 0;
@@ -337,17 +337,22 @@ h1, h2, h3 {
   }
   P {
     font-size: $alt-para-size;
+    font-weight: 600;
   }
 }
 
 .how-we-do {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
   margin: 70px 0 60px 0;
   h2 {
     font-size: $alt-header-size;
   }
 
   p {
-    font-size: $alt-para-size;
+    font-size: $para-size;
+    font-weight: 600;
   }
 }
 
