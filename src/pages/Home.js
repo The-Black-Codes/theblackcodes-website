@@ -1,66 +1,57 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 
 import CardComponent from '../components/Card';
+import HomeEventCardComponent from '../components/HomeEventCard';
 import JumbotronComponent from '../components/Jumbotron';
 import { organizers } from '../db/organizers';
+import { events } from '../db/events';
+import content from "../siteContent.json";
 
 const Home = (props) => {
-  const headerCards = [{
-    name: 'Header 1',
-    title: 'This is the header',
-    photo: 'https://via.placeholder.com/150'
-  }, {
-    name: 'Header 2',
-    title: 'This is the header',
-    photo: 'https://via.placeholder.com/150'
-  }, {
-    name: 'Header 3',
-    title: 'This is the header',
-    photo: 'https://via.placeholder.com/150'
-  }];
-
   return (
-    <>
-      <JumbotronComponent pageTitle="Culture, Community, Code" lead="Random Text" buttonText="Learn More" {...props} />
-      <div>
-        <section id="home-about">
-          <div className="container">
-            <h2>About Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium viverra suspendisse potenti nullam. Hac habitasse platea dictumst vestibulum rhoncus. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Porta lorem mollis aliquam ut porttitor leo a.</p>
-          </div>
-        </section>
-        <section id="home-updates">
-          <Container>
-            <Row>
-              <Col>
-                <h2>Events</h2>
-              </Col>
-            </Row>
-            <Row>
-            {
-              headerCards.map((header, index) => {
-                return (
-                  <Col key={index} md={4} xs={12} >
-                    <CardComponent organizer={header} imgType='rounded' />
-                  </Col>
-                )
-              })
-            }
-            </Row>
-          </Container>
-        </section>
-        <section id="home-contact">
+    <div id="home">
+      <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
+      <section id="home-about">
+        <div className="container">
+          <h2>{content.homepageAbout}</h2>
+        </div>
+      </section>
+      <section id="home-events">
+        <Container>
           <Row>
             <Col>
-              <h2 className="pt-5">Reach out to Us!</h2>
-              <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button className="btn" onClick={() => props.history.push('/contact')}>Contact us</button>
+              <h2>Our Latest Events</h2>
+            </Col>
+          </Row>
+          <Row>
+          {
+            events.map((event, index) => {
+              return (
+                <Col key={index} md={3} xs={12} >
+                  <HomeEventCardComponent event={event} />
+                </Col>
+              )
+            })
+          }
+          </Row>
+        </Container>
+      </section>
+      <section id="home-contact">
+        <Container>
+          <Row>
+            <Col>
+              <p>Are you looking to connect with us? <br/>Join our community of Black Devs! <br/>Do you need help with a project or have a project idea?</p>
+              <Button size="lg" onClick={() => props.history.push('/contact')}>Contact us</Button>
             </Col> 
           </Row>
-        </section>
-        <section className="container-fluid" id="organizers">
-          <h2>ORGANIZERS</h2>
+        </Container>
+      </section>
+      <section id="home-organizers">
+        <Container>
+          <Row>
+            <Col><h2>ORGANIZERS</h2></Col>
+          </Row>
           <Row>
             {
               organizers.map((organizer, index) => {
@@ -72,9 +63,9 @@ const Home = (props) => {
               })
             }
           </Row>
-        </section>
-      </div>
-    </>
+        </Container>
+      </section>
+    </div>
   );
 }
 

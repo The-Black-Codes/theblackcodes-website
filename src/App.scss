@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 /////// FONT FAMILY ////////
 $head-font: 'Racho', cursive;
 $para-font: 'Raleway' sans-serif;
 
 ////// FONT SIZE ////////
 $header-size: 3.5em;
+$link-size: 1em;
 $alt-header: 2em;
+$alt-header-size: 2.8em;
+
 $para-size: 1.2em;
+$alt-para-size: 1.9em;
 
 ///// SPACING //////
 $line-space: 1.3em;
+$alt-line-space: 2em;
+
 $letter-space: .12em;
 $word-spacing: .1em;
 
@@ -29,6 +37,7 @@ $btn-width: 110px;
 $btn-height: 35px;
 $btn-radius: 5px;
 $btn-border: none;
+
 .App {
   text-align: center;
 }
@@ -59,16 +68,6 @@ $btn-border: none;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 h1, h2, h3 {
   font-family: $head-font;
 }
@@ -77,108 +76,182 @@ h1, h2, h3 {
   color: $prime-color;
 }
 
-// Navigation
-.navbar {
-  height: 65px;
-}
-
-.navbar-brand img {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 30px;
-  position: absolute;
-  top: 12px;
-  border: medium solid $prime-color;
-}
-
 .navigation {
   background: $prime-color;
 }
 
-.navbar-brand {
+// Navigation
+.navbar {
+  height: 75px;
 
-  img {
-    height: 65;
-    width: 65;
-  }
-}
-
-nav-item {
-  font-size: $header-size;
-}
-
-.nav-link:hover {
-  color: #9966cc !important;
-}
-
-// Homepage
-
-// Jumbotron
-.jumbotron {
-  background: $gradient-primary;
-  border-radius: 0 !important;
-}
-
-.display-3 {
-  font-family: $head-font;
-}
-
-// About Block
-
-#home-about {
-  padding: 50px 0px 50px;
-
-  .container {
-    align-self: center;
-  
-    h2 {
-      margin-top: 50px;
-    }
-  }
-}
-
-// Event Block
-
-#home-updates {
-  background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
-  padding: 50px 0px 50px;
-}
-
-// Contact Block
-
-#home-contact {
-  background: rgba(59, 35, 93, 0.3); //$gradient-secondary;
-  
-  height: 50vh;
-
-  h2 {
-    font-family: $head-font;
-    font-size: $alt-header;
+  .navbar-brand img {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: absolute;
+    top: 30px;
+    border: medium solid $prime-color;
   }
 
-  button {
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    font-family: $para-font;
-    background: #E5E5E5;
+  .nav-link {
+    color: white !important;
+    font-size: $link-size;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
   }
-}
 
-// Organizer Block
-
-#organizers {
-  margin: 100px 0px;
+  .nav-link:hover {
+    color: #9966cc !important;
+  }
 }
 
 .card {
   border: none !important;
 }
 
-// Contact Page
+// Jumbotron
+.jumbotron {
+  background-size: cover;   
+  background-repeat: no-repeat; 
+  background-position: center center;
+  border-radius: 0 !important;
+  height: 400px;
+  margin-bottom: 0px !important;
 
+  .display-3 {
+    font-family: $head-font;
+    font-weight: bold;
+    color: white;
+  }
 
+  .lead {
+    font-weight: bold;
+    color: white;
+  }
+
+  hr {
+    color: white !important;
+    width: 300px;
+    border-top: 5px double;
+  }
+
+  .btn {
+    background-color: #3B235D !important;
+    color: white;
+    border-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn:hover {
+    background-color: transparent !important;
+    border-color:#3B235D;
+    color: #3B235D;
+  }
+}
+
+// Homepage
+#home {
+  .jumbotron {
+    background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);
+    height: 600px;
+  }
+
+  #home-about {
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+  
+    .container {
+      align-self: center;
+    
+      h2 {
+        padding-top: 50px;
+        font-family: 'Raleway', sans-serif;
+      }
+    }
+  }
+
+  #home-events {
+    background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
+    padding: 50px 0px;
+  
+    h2 {
+      margin-bottom: 25px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .card {
+      margin-bottom: 25px;
+    }
+  }
+
+  #home-contact {
+    padding: 50px 0px;
+    background-image: $gradient-secondary, url(./assets/images/wide-angle_kindful.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+    p {
+      color: white;
+      font-size: $alt-header;
+      font-family: 'Raleway' sans-serif;
+    }
+  
+    button {
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+      background-color: #3B235D !important;
+      color: white;
+      border-color: white;
+    }
+  
+    button:hover {
+        background-color: transparent !important;
+        border-color:#3B235D;
+        color: #3B235D;
+    }
+  }
+
+  #home-organizers {
+    margin: 50px 0px;
+
+    h2 {
+      font-family: 'Raleway' sans-serif;
+    }
+  }
+}
+
+///// Events Page /////
+#events {
+  font-family: 'Raleway', sans-serif;
+
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/fletchlab/image/upload/y_100/v1588020688/theblackcodes/website_images/image5_eiy8u2.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+  }
+  
+  h1 {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 40px;
+  }
+
+  h4 {
+    font-weight: 300;
+  }
+
+  .date {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+  }
+}
 
 // Footer
 .page-footer {
@@ -188,40 +261,95 @@ nav-item {
   a {
     color: white;
   }
-}
 
-.footer-copyright {
-  background-color: $secondary-color;
+  a:hover {
+    color: #9966cc;
+  }
+
+  .footer-copyright {
+    background-color: $secondary-color;
+  }
 }
 
 //////// ABOUT PAGE ////////
-.aboutUs {
+.about-section {
   width: 100%;
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
+  //height: 100vh;
+  
+  .about-img {
+    background-image: url(./assets/images/portrait.jpg);
+    width: 100%;
+    //height: 100vh;
+    background-size: cover;
+    background-position: 50% 100%;
+  }
 
-  &.about-img {
-    background-image: url(./assets/images/BlackCodes.png);
+  .about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  h2 {
+    font-family: $head-font;
+    font-size: $header-size;
+    margin: 40px 0 100px 0;
+    text-align: center;
+  }
+  
+  p {
+    font-family: $para-font;
+    font-size: $alt-header;
+    line-height: $alt-line-space;
   }
 }
 
 .mission-state {
-  background: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
-  max-width: 100vw;
-  height: 25vh;
-  text-align: center;
+  background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 
   h2 {
-    display: inline-block;
+    font-size: $header-size;
+    margin: 10px 0 20px 0;
+
   }
 
   p {
     font-family: $para-font;
-    font-size: $para-size;
+    font-size: $alt-header;
   }
 }
 
+
+////////////// We Do Section //////////////
+.section {
+  // height: 50vh;
+  // margin: 70px 0 60px 0;
+  background-color: #f5f5f5;
+  
+  h2 {
+    font-size: $alt-header-size;
+    padding: 70px 0 60px 0;
+    
+  }
+  P {
+    font-size: $alt-para-size;
+  }
+}
+
+.how-we-do {
+  margin: 70px 0 60px 0;
+  h2 {
+    font-size: $alt-header-size;
+  }
+
+  p {
+    font-size: $alt-para-size;
+  }
+}
 
 /* At the top level of your code */
 @media screen and (max-width: 480px) {
@@ -243,4 +371,17 @@ nav-item {
   .display-3 {
     font-size: 2.5em !important;
   }
+
+
+  .about-img {
+    background-image: none;
+  }
 }
+
+
+@media screen and (max-width: 850px) {
+  #home-contact {
+    height: 90vh;
+  }
+}
+
