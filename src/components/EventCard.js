@@ -25,7 +25,7 @@ const eventStyle = {
   }
 }
 
-const CardComponent = ({ event }) => {
+const EventCardComponent = ({ event }) => {
   return (
     <Card>
       <CardBody style={eventStyle.body}>
@@ -51,4 +51,4 @@ const CardComponent = ({ event }) => {
   );
 };
 
-export default CardComponent;
+export default EventCardComponent;

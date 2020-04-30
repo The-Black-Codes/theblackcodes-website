@@ -6,7 +6,7 @@ export const events = [
     "location": "Kindful",
     "address": "21 Jumpstreet Nashville, TN",
     "date": "10/19/19",
-    "name": "Black.Codes Hack Night",
+    "name": "Virtual Hack Night",
     "sponsor": "sponsor",
     flyer: "https://res.cloudinary.com/fletchlab/image/upload/v1588018695/theblackcodes/website_images/TBC_Virtual_Hack-a-thon_hraonb.jpg"
   },
@@ -16,7 +16,7 @@ export const events = [
     "location": "Dogwood Nashville",
     "address": "21 Jumpstreet Nashville, TN",
     "date": "11/03/19",
-    "name": "Black Dev Brunch",
+    "name": "Code Brunch",
     "sponsor": "sponsor",
     flyer: "https://res.cloudinary.com/fletchlab/image/upload/v1588020627/theblackcodes/website_images/portrait_5_ijptpe.jpg"
   },
@@ -26,7 +26,7 @@ export const events = [
     "location": "The Bark",
     "address": "21 Jumpstreet Nashville, TN",
     "date": "01/19/20",
-    "name": "Black Devs Brunch",
+    "name": "Code Brunch",
     "sponsor": "sponsor",
     flyer: "https://res.cloudinary.com/fletchlab/image/upload/v1588020690/theblackcodes/website_images/image11_cgmiss.jpg "
   },
@@ -36,7 +36,7 @@ export const events = [
     "location": "NTC",
     "address": "21 Jumpstreet Nashville, TN",
     "date": "02/29/20",
-    "name": "Black History Hack Night",
+    "name": "Hack Night",
     "sponsor": "sponsor",
     flyer: "https://res.cloudinary.com/fletchlab/image/upload/v1588020628/theblackcodes/website_images/portrait-HN-winners_exflzy.jpg"
   }

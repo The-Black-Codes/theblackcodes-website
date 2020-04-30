@@ -1,11 +1,12 @@
 import React from 'react';
 import JumbotronComponent from '../components/Jumbotron';
+// import BackgroundVideo from '../components/BackgroundVideo';
 
 const About = () => {
     return (
-      <>
+      <div id="about-page">
         <JumbotronComponent pageTitle='About Us' lead='Learn all about The Black.Codes.' />
-
+        {/* <BackgroundVideo /> */}
           <div class="container-fluid">
             <div class="about-section">
               <div class="row">
@@ -22,7 +23,7 @@ const About = () => {
               </div>
             </div>
         </div>
-      </>
+      </div>
     );
 }
 

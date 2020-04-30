@@ -60,8 +60,8 @@ const FooterComponent = (props) => {
        {/* Footer Elements */}
     
       {/* <!-- Copyright --> */}
-      <div className="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> The Black.Codes.com</a>
+      <div className="footer-copyright text-center py-3">
+        <a href="https://theblackcodes.org/"> The Black.Codes</a> ||  © 2020 Copyright
       </div>
       {/* <!-- Copyright --> */}
     

@@ -6,6 +6,7 @@ $para-font: 'Raleway' sans-serif;
 
 ////// FONT SIZE ////////
 $header-size: 3.5em;
+$link-size: 1em;
 $alt-header: 2em;
 $para-size: 1.2em;
 
@@ -31,6 +32,7 @@ $btn-width: 110px;
 $btn-height: 35px;
 $btn-radius: 5px;
 $btn-border: none;
+
 .App {
   text-align: center;
 }
@@ -61,16 +63,6 @@ $btn-border: none;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 h1, h2, h3 {
   font-family: $head-font;
 }
@@ -79,62 +71,56 @@ h1, h2, h3 {
   color: $prime-color;
 }
 
-// Navigation
-.navbar {
-  height: 85px;
-}
-
-.navbar-brand img {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 30px;
-  position: absolute;
-  top: 12px;
-  border: medium solid $prime-color;
-}
-
 .navigation {
   background: $prime-color;
 }
 
-.navbar-brand {
+// Navigation
+.navbar {
+  height: 75px;
 
-  img {
-    height: 65;
-    width: 65;
+  .navbar-brand img {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: absolute;
+    top: 30px;
+    border: medium solid $prime-color;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: $link-size;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-link:hover {
+    color: #9966cc !important;
   }
 }
 
-.nav-link {
-  color: white !important;
-  font-size: $para-size;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #9966cc !important;
-}
-
-// Homepage
-#home {
-  .jumbotron {
-    background: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg) center bottom;
-    border-radius: 0 !important;
-  }
+.card {
+  border: none !important;
 }
 
 // Jumbotron
 .jumbotron {
-  background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);   
   background-size: cover;   
-  background-repeat: no-repeat;   
-  //background-attachment: fixed;   
-  background-position: center center;   
-  //max-width: 100vw;   
-  //height: 35vh;
+  background-repeat: no-repeat; 
+  background-position: center center;
   border-radius: 0 !important;
+  height: 400px;
+  margin-bottom: 0px !important;
+
+  .display-3 {
+    font-family: $head-font;
+    font-weight: bold;
+    color: white;
+  }
 
   .lead {
     font-weight: bold;
@@ -161,96 +147,85 @@ h1, h2, h3 {
   }
 }
 
-.display-3 {
-  font-family: $head-font;
-  font-weight: bold;
-  color: white;
-}
+// Homepage
+#home {
+  .jumbotron {
+    background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);
+    height: 600px;
+  }
 
-// About Block
-
-#home-about {
-  padding-bottom: 50px;
-
-  .container {
-    align-self: center;
+  #home-about {
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
   
-    h2 {
-      margin-top: 50px;
-      font-family: 'Raleway', sans-serif;
+    .container {
+      align-self: center;
+    
+      h2 {
+        padding-top: 50px;
+        font-family: 'Raleway', sans-serif;
+      }
     }
   }
-}
 
-// Event Block
-
-#home-updates {
-  background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
-  padding: 50px 0px 50px;
-
+  #home-events {
+    background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
+    padding: 50px 0px;
+  
     h2 {
       margin-bottom: 25px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
     }
+
     .card {
       margin-bottom: 25px;
     }
-}
-
-// Contact Block
-
-#home-contact {
-  background-image: $gradient-secondary, url(./assets/images/wide-angle_kindful.jpg);   
-  background-size: cover;   
-  background-repeat: no-repeat;   
-  //background-attachment: fixed;   
-  background-position: center center;   
-  height: 50vh;
-
-  // h2 {
-  //   font-family: $head-font;
-  //   font-size: $alt-header;
-  //   color: white;
-  // }
-
-  p {
-    padding: 0px 15%;
-    color: white;
-    font-size: $alt-header;
-    margin: 115px 0px 25px 0px;
   }
 
-  button {
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
-    background-color: #3B235D !important;
-    color: white;
-    border-color: white;
+  #home-contact {
+    padding: 50px 0px;
+    background-image: $gradient-secondary, url(./assets/images/wide-angle_kindful.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+    p {
+      color: white;
+      font-size: $alt-header;
+      font-family: 'Raleway' sans-serif;
+    }
+  
+    button {
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+      background-color: #3B235D !important;
+      color: white;
+      border-color: white;
+    }
+  
+    button:hover {
+        background-color: transparent !important;
+        border-color:#3B235D;
+        color: #3B235D;
+    }
   }
 
-  button:hover {
-      background-color: transparent !important;
-      border-color:#3B235D;
-      color: #3B235D;
+  #home-organizers {
+    margin: 50px 0px;
+
+    h2 {
+      font-family: 'Raleway' sans-serif;
+    }
   }
 }
-
-// Organizer Block
-
-#organizers {
-  margin: 100px 0px;
-}
-
-.card {
-  border: none !important;
-}
-
-// Contact Page
 
 ///// Events Page /////
 #events {
   font-family: 'Raleway', sans-serif;
 
   .jumbotron {
-    background: $gradient-primary, url(https://res.cloudinary.com/fletchlab/image/upload/y_100/v1588020688/theblackcodes/website_images/image5_eiy8u2.jpg) center bottom;
+    background: $gradient-primary, url(https://res.cloudinary.com/fletchlab/image/upload/y_100/v1588020688/theblackcodes/website_images/image5_eiy8u2.jpg);
     background-position: center top;
     background-size: cover;
     border-radius: 0 !important;
@@ -285,10 +260,10 @@ h1, h2, h3 {
   a:hover {
     color: #9966cc;
   }
-}
 
-.footer-copyright {
-  background-color: $secondary-color;
+  .footer-copyright {
+    background-color: $secondary-color;
+  }
 }
 
 //////// ABOUT PAGE ////////
