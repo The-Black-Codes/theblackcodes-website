@@ -225,6 +225,18 @@ h1, h2, h3 {
   }
 }
 
+///// Contact Page /////
+#contact{
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/v1588213237/web-images/IMG_20191103_135740_k0wrjf.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+  }
+}
+
+
 ///// Events Page /////
 #events {
   font-family: 'Raleway', sans-serif;
@@ -272,6 +284,17 @@ h1, h2, h3 {
 }
 
 //////// ABOUT PAGE ////////
+#about {
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/c_fill/web-images/IMG_2075_ghqibc.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+}
+}
+
+
 .about-section {
   width: 100%;
   //height: 100vh;

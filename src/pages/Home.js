@@ -12,6 +12,7 @@ const Home = (props) => {
   return (
     <div id="home">
       <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
+
       <section id="home-about">
         <div className="container">
           <h2>{content.homepageAbout}</h2>

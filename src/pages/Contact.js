@@ -5,8 +5,8 @@ import ContactForm from '../components/ContactForm';
 const Contact = () => {
   
   return (
-  <div>
-    <JumbotronComponent pageTitle='Contact Us' lead='Stay in touch with The Black.Codes.' />
+  <div id="contact">
+    <JumbotronComponent id="contact-title" pageTitle='Contact Us' lead='Stay in touch with The Black.Codes.' />
 
       <ContactForm  />
 </div>

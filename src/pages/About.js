@@ -4,7 +4,7 @@ import {Container,Row,Col} from 'reactstrap';
 
 const About = () => {
     return (
-      <>
+      <div id="about">
         <JumbotronComponent
           pageTitle="About Us"
           lead="Learn all about The Black.Codes."
@@ -66,7 +66,7 @@ const About = () => {
             </Col>
           </Row>
         </Container>
-      </>
+      </div>
     );
 }
 
