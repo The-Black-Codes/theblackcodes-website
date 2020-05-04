@@ -35,6 +35,11 @@ const Home = (props) => {
             })
           }
           </Row>
+          <Row>
+            <Col>
+              <Button size="lg" onClick={() => props.history.push('/events')}>See more</Button>
+            </Col>
+          </Row>
         </Container>
       </section>
       <section id="home-contact">
@@ -49,8 +54,8 @@ const Home = (props) => {
       </section>
       <section id="home-organizers">
         <Container>
-          <Row>
-            <Col><h2>ORGANIZERS</h2></Col>
+          <Row className="mb-4">
+            <Col><h2>Our Organizers</h2></Col>
           </Row>
           <Row>
             {
