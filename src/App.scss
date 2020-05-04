@@ -229,7 +229,7 @@ h1, h2, h3 {
 #contact{
   .jumbotron {
     background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/v1588213237/web-images/IMG_20191103_135740_k0wrjf.jpg);
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
     border-radius: 0 !important;
     height: 400px;
@@ -287,7 +287,7 @@ h1, h2, h3 {
 #about {
   .jumbotron {
     background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/c_fill/web-images/IMG_2075_ghqibc.jpg);
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
     border-radius: 0 !important;
     height: 400px;
