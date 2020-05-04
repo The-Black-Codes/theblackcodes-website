@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card, CardBody, CardImg, Row, Col } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDay, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import { baseEventImage } from '../db/events';
 
 const eventStyle = {
