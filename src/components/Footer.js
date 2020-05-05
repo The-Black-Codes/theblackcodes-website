@@ -13,12 +13,12 @@ const FooterComponent = (props) => {
           {/* Grid column */}
           <div className="col-md-6 col-sm-12 col-xs-12 py-2">
             <div className="mt-4 text-center">
-              <h3 className="mb-5">About The Black.Codes</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis nunc eget lorem dolor. Aliquet risus feugiat in ante metus dictum at tempor commodo. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Eget est lorem ipsum dolor sit amet consectetur.
+              <h3 className="mb-4">About The Black.Codes</h3>
+              <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed.The tech field is lacking a minority presence and we are changing that narrative through our platform.
               </p>
             </div>
             <div className="mb-5 text-center">
-              <h3 className="mb-5">Follow Us</h3>
+              <h3 className="mb-4">Follow Us</h3>
               {/* Facebook */}
               <a href="https://www.facebook.com/theblackcodes01/" className="fb-ic">
                 <FontAwesomeIcon className='mx-3' size='6x' icon={faFacebook} />

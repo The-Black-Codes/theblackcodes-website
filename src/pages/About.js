@@ -42,8 +42,7 @@ const About = () => {
               <Col>
                 <h2>Mission Statment</h2>
                 <p className="statement">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                We are a group of black software engineers that are focused on creating opportunities for our community and ourselves through tech.
                 </p>
               </Col>
             </Row>

@@ -164,6 +164,18 @@ h1, h2, h3 {
     .card {
       margin-bottom: 25px;
     }
+    .btn {
+      background-color: #3B235D !important;
+      color: white;
+      border-color: white;
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+  
+    .btn:hover {
+      background-color: transparent !important;
+      border-color:#3B235D;
+      color: #3B235D;
+    }
   }
 
   #home-contact {
@@ -367,19 +379,19 @@ h1, h2, h3 {
     }
 
     .who-are-we {
-      background-color: #DCD6F7;
+      background-color: $secondary-color;
     }
 
     .what-we-do {
-      background-color: #E5ECF4;
+      background-color:$white;
     }
 
     .why-we-do {
-      background-color: #EFFFFA;
+      background-color: $white;
     }
 
     .how-we-do {
-      background-color: #C5AFA4;;
+      background-color: $secondary-color;
     }
   }
 }
