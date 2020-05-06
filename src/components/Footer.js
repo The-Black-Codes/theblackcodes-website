@@ -12,9 +12,9 @@ const FooterComponent = (props) => {
         <div className="row">
           {/* Grid column */}
           <div className="col-md-6 col-sm-12 col-xs-12 py-2">
-            <div className="mt-4 text-center">
+            <div className="my-4 text-center">
               <h3 className="mb-4">About The Black.Codes</h3>
-              <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed.The tech field is lacking a minority presence and we are changing that narrative through our platform.
+              <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed. The tech field is lacking a minority presence and we are changing that narrative through our platform.
               </p>
             </div>
             <div className="mb-5 text-center">
@@ -46,36 +46,6 @@ const FooterComponent = (props) => {
           </div>
           {/* Grid column */}
         </div>
-        {/* <div className="row"> */}
-          {/* Grid column */}
-          {/* <div className="col-md-12 py-5">
-            <div className="mb-5 text-center">
-              <h3 className="mb-5">Follow Us</h3> */}
-              {/* Facebook */}
-              {/* <a href="https://www.facebook.com/theblackcodes01/" className="fb-ic">
-                <FontAwesomeIcon className='mx-3' size='6x' icon={faFacebook} />
-              </a> */}
-              {/* Twitter */}
-              {/* <a href="https://twitter.com/theblackcodes1" className="tw-ic">
-              <FontAwesomeIcon className='mx-3' size='6x' icon={faTwitter} />
-              </a> */}
-              {/* Linkedin */}
-              {/* <a href="https://www.linkedin.com/company/the-black-codes/?viewAsMember=true" className="li-ic">
-              <FontAwesomeIcon className='mx-3' size='6x' icon={faLinkedin} />
-              </a> */}
-              {/* Instagram */}
-              {/* <a href="https://www.instagram.com/theblack.codes/" className="ins-ic">
-              <FontAwesomeIcon className='mx-3' size='6x' icon={faInstagram} />
-              </a> */}
-              {/* Github */}
-              {/* <a href="https://github.com/The-Black-Codes">
-              <FontAwesomeIcon className='mx-3' size='6x' icon={faGithub} />
-              </a>
-            </div>
-          </div> */}
-          {/* Grid column */}
-        {/* </div> */}
-        {/* Grid row */}
       </div>
        {/* Footer Elements */}
     
