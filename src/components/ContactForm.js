@@ -18,7 +18,7 @@ const ContactForm = _ => {
   const validate = _ => {
     const { name, email, message, captcha } = form;
 
-    if (name && validator.isAlpha(name) && email && validator.isEmail(email) && message && captcha) {
+    if (name && validator.matches(name, /^[a-zA-Z ]*$/) && email && validator.isEmail(email) && message && captcha) {
       return false;
     }
     return true;
@@ -26,7 +26,7 @@ const ContactForm = _ => {
 
   const submitForm = async () => {
     console.log('start', form);
-    const sendToSlack = await axios.post('http://localhost:8001/contact', form, {
+    const sendToSlack = await axios.post('https://api.theblackcodes.org/contact', form, {
       headers: {
         'content-type': 'application/json'
       }
