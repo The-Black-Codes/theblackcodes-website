@@ -10,7 +10,7 @@
 
 # production
 #/build
-api/.env
+/api/.env
 
 # misc
 .DS_Store
