@@ -25,7 +25,6 @@ const ContactForm = _ => {
   }
 
   const submitForm = async () => {
-    console.log('start', form);
     const sendToSlack = await axios.post('https://api.theblackcodes.org/contact', form, {
       headers: {
         'content-type': 'application/json'
