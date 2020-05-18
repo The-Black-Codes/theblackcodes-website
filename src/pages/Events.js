@@ -9,7 +9,7 @@ const Events = () => {
     <div id="events">
       <JumbotronComponent pageTitle='Events Page' lead='Stay up on the latest events.' />
       <Container>
-        <h1>Stay up with us on the latest</h1>
+        <h1 className="mb-3">Stay up with us on the latest</h1>
         <Row>
         {
           events.map((event, index) => {

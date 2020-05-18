@@ -21,7 +21,8 @@ const eventStyle = {
     backgroundColor: 'black',
     color: 'white',
     padding: 0,
-    paddingBottom: '10px'
+    paddingBottom: '10px',
+    textAlign: 'center'
   }
 }
 

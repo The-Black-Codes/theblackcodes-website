@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 /////// FONT FAMILY ////////
-$head-font: 'Racho', cursive;
-$para-font: 'Raleway' sans-serif;
+$head-font: 'Bungee Inline', cursive;
+$para-font: 'Raleway', sans-serif;
 
 ////// FONT SIZE ////////
 $header-size: 3.5em;
@@ -10,6 +11,7 @@ $link-size: 1em;
 $alt-header: 2em;
 $alt-header-size: 2.8em;
 
+$para-small: 1em;
 $para-size: 1.2em;
 $alt-para-size: 1.9em;
 
@@ -38,36 +40,6 @@ $btn-height: 35px;
 $btn-radius: 5px;
 $btn-border: none;
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 h1, h2, h3 {
   font-family: $head-font;
 }
@@ -85,14 +57,15 @@ h1, h2, h3 {
   height: 75px;
 
   .navbar-brand img {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border-radius: 50%;
     margin-left: 30px;
-    position: absolute;
+    // position: absolute;
     top: 30px;
     border: medium solid $prime-color;
+    z-index: 9999;
   }
 
   .nav-link {
@@ -109,7 +82,7 @@ h1, h2, h3 {
 }
 
 .card {
-  border: none !important;
+  border: none;
 }
 
 // Jumbotron
@@ -117,25 +90,26 @@ h1, h2, h3 {
   background-size: cover;   
   background-repeat: no-repeat; 
   background-position: center center;
-  border-radius: 0 !important;
+  border-radius: 0;
   height: 400px;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
 
   .display-3 {
     font-family: $head-font;
-    font-weight: bold;
+    // font-weight: bold;
     color: white;
+    text-align: center;
   }
 
   .lead {
     font-weight: bold;
     color: white;
+    text-align: center;
   }
 
   hr {
-    color: white !important;
-    width: 300px;
-    border-top: 5px double;
+    width: 30% ;
+    border-top: 5px double white;
   }
 
   .btn {
@@ -157,10 +131,14 @@ h1, h2, h3 {
   .jumbotron {
     background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);
     height: 600px;
+
+    .display-3 {
+      padding-top: 120px;
+    }
   }
 
   #home-about {
-    padding-bottom: 50px;
+    padding: 70px 0px;
     background-color: black;
     color: white;
   
@@ -168,7 +146,6 @@ h1, h2, h3 {
       align-self: center;
     
       h2 {
-        padding-top: 50px;
         font-family: 'Raleway', sans-serif;
       }
     }
@@ -176,7 +153,8 @@ h1, h2, h3 {
 
   #home-events {
     background: linear-gradient(122.32deg,rgba(59, 35, 93, 0.75) 100%, rgba(229, 229, 229, 0.75) 0%);
-    padding: 50px 0px;
+    padding: 70px 0px;
+    text-align: center;
   
     h2 {
       margin-bottom: 25px;
@@ -187,6 +165,18 @@ h1, h2, h3 {
     .card {
       margin-bottom: 25px;
     }
+    .btn {
+      background-color: #3B235D !important;
+      color: white;
+      border-color: white;
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+  
+    .btn:hover {
+      background-color: transparent !important;
+      border-color:#3B235D;
+      color: #3B235D;
+    }
   }
 
   #home-contact {
@@ -195,6 +185,8 @@ h1, h2, h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
   
     p {
       color: white;
@@ -218,9 +210,14 @@ h1, h2, h3 {
 
   #home-organizers {
     margin: 50px 0px;
+    text-align: center;
 
     h2 {
-      font-family: 'Raleway' sans-serif;
+      font-family: $para-font;
+    }
+
+    h3 {
+      font-family: $para-font;
     }
   }
 }
@@ -239,7 +236,7 @@ h1, h2, h3 {
 
 ///// Events Page /////
 #events {
-  font-family: 'Raleway', sans-serif;
+  font-family: $para-font;
 
   .jumbotron {
     background: $gradient-primary, url(https://res.cloudinary.com/fletchlab/image/upload/y_100/v1588020688/theblackcodes/website_images/image5_eiy8u2.jpg);
@@ -251,8 +248,13 @@ h1, h2, h3 {
   
   h1 {
     font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    padding-bottom: 40px;
+    font-family: $para-font;
+    padding: 50px 0px;
+  }
+
+  h2 {
+    padding: 50px 0px;
+    font-family: $para-font;
   }
 
   h4 {
@@ -265,24 +267,27 @@ h1, h2, h3 {
   }
 }
 
-// Footer
-.page-footer {
-  background-color: $prime-color;
-  color: white;
-
-  a {
+#about {
+  #the-then {
+    padding: 50px 0px;
+    background-color: black;
     color: white;
+
+    h2 {
+      text-align: center;
+      font-family: $para-font;
+      font-size: $header-size;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      text-align: justify;
+      font-family: $para-font;
+      line-height: 1.5em;
+    }
   }
 
-  a:hover {
-    color: #9966cc;
-  }
-
-  .footer-copyright {
-    background-color: $secondary-color;
-  }
-}
-
+<<<<<<< HEAD
 //////// ABOUT PAGE ////////
 #about {
   .jumbotron {
@@ -301,48 +306,197 @@ h1, h2, h3 {
   
   .about-img {
     background-image: url(./assets/images/portrait.jpg);
+=======
+  #background-video {
+>>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
     width: 100%;
-    //height: 100vh;
-    background-size: cover;
-    background-position: 50% 100%;
+    height: 400px;
+    background-color: black;
+
+    .video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      position: absolute;
+      top: 75px;
+      color: #f1f1f1;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-family: $para-font;
+      width: 100%;
+      height: 400px;
+      text-align: center;
+      padding: 0px;
+
+      h1 {
+        font-size: 4.5em;
+        padding-top: 120px;
+      }
+
+      h1, h3 {
+        font-family: $para-font;
+      }
+
+      hr {
+        border: 1px double white;
+        width: 30%;
+      }
+    }
   }
 
-  .about-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  h2 {
-    font-family: $head-font;
-    font-size: $header-size;
-    margin: 40px 0 100px 0;
-    text-align: center;
-  }
+  #the-now {
+    .about-img {
+      background-image: url(./assets/images/portrait.jpg);
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: 50% 100%;
+    }
   
-  p {
+    .about-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    h2 {
+      font-family: $para-font;
+      font-size: $header-size;
+      margin: 40px 0px;
+      text-align: center;
+    }
+    
+    p {
+      font-family: $para-font;
+      font-size: $alt-header;
+      line-height: 1.2em
+    }
+  }
+
+  .mission-state {
+    background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(./assets/images/wide-angle_kindful.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0px;
+  
+    h2 {
+      font-size: $header-size;
+      font-family: $para-font;
+      margin: 10px 0px;
+      color: white;
+    }
+  
+    p {
+      font-family: $para-font;
+      font-size: $alt-header;
+      color: white;
+    }
+  }
+
+  #reasons {
     font-family: $para-font;
-    font-size: $alt-header;
-    line-height: $alt-line-space;
+    text-align: center;
+
+    h2 {
+      text-align: center;
+      font-family: $para-font;
+    }
+
+    .who-are-we, .what-we-do, .why-we-do, .how-we-do {
+      padding: 100px 50px;
+    }
+
+    .who-are-we {
+      background-color: $secondary-color;
+    }
+
+    .what-we-do {
+      background-color:$white;
+    }
+
+    .why-we-do {
+      background-color: $white;
+    }
+
+    .how-we-do {
+      background-color: $secondary-color;
+    }
   }
 }
 
-.mission-state {
-  background-image: linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./assets/images/wide-angle_kindful.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+///// Contact Page /////
+#contact {
+  font-family: $para-font;
+  text-align: center;
+  letter-spacing: 5px;
 
-  h2 {
-    font-size: $header-size;
-    margin: 10px 0 20px 0;
-
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/v1588213236/web-images/IMG_2075_ghqibc.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0;
+    height: 400px;
   }
 
-  p {
+  .contact-info {
+    padding-top: 15%;
+    background-color: black;
+    color: white;
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  h3 {
     font-family: $para-font;
-    font-size: $alt-header;
+    padding-bottom: 15px;
+  }
+
+  h5 {
+    font-family: $para-font;
+  }
+
+  .newsletter {
+    width: 550px;
+    height: 550px;
+    border: none;
+  }
+}
+
+// Footer
+.page-footer {
+  background-color: $prime-color;
+  color: white;
+
+  h3 {
+    font-family: $para-font;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #9966cc;
+  }
+
+  .newsletter {
+    border: none;
+    width: 400px;
+    height: 550px;
+    background-color: transparent;
+  }
+
+  .footer-copyright {
+    background-color: $secondary-color;
   }
 }
 
@@ -360,17 +514,7 @@ h1, h2, h3 {
   }
   P {
     font-size: $alt-para-size;
-  }
-}
-
-.how-we-do {
-  margin: 70px 0 60px 0;
-  h2 {
-    font-size: $alt-header-size;
-  }
-
-  p {
-    font-size: $alt-para-size;
+    font-weight: 600;
   }
 }
 
