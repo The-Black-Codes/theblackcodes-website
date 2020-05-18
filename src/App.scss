@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 /////// FONT FAMILY ////////
-$head-font: 'Racho', cursive;
+$head-font: 'Bungee Inline', cursive;
 $para-font: 'Raleway', sans-serif;
 
 ////// FONT SIZE ////////
@@ -56,12 +57,12 @@ h1, h2, h3 {
   height: 75px;
 
   .navbar-brand img {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border-radius: 50%;
     margin-left: 30px;
-    position: absolute;
+    // position: absolute;
     top: 30px;
     border: medium solid $prime-color;
     z-index: 9999;
@@ -94,7 +95,7 @@ h1, h2, h3 {
   margin-bottom: 0px;
 
   .display-3 {
-    font-family: $para-font;
+    font-family: $head-font;
     // font-weight: bold;
     color: white;
     text-align: center;
