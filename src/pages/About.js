@@ -27,9 +27,9 @@ const About = () => {
               <Col md={7} xs={12}>
                 <h2>The Now</h2>
                 <p className="about-info">
-                  The Black.Codes is a tech resource hub for the black community.
-                  We strive to empower and position our community to be leaders in
-                  the tech industry.
+                We decided to take the term and give it a better meaning. The Black.Codes is a resource hub for the black tech community. 
+                We strive to empower and position our community to be leaders in the tech industry. 
+                The tech field is lacking a minority presence. We are changing that narrative through our platform.
                 </p>
               </Col>
             </Row>
@@ -42,7 +42,7 @@ const About = () => {
               <Col>
                 <h2>Mission Statment</h2>
                 <p className="statement">
-                We are a group of black software engineers that are focused on creating opportunities for our community and ourselves through tech.
+                We focus on creating opportunities for our community through tech.
                 </p>
               </Col>
             </Row>
@@ -78,7 +78,7 @@ const About = () => {
                 teaching opportunities, apprenticeships, social media, Increase
                 ownership of black tech businesses, direct software support We
                 do it by spotlighting black engineers, and developers that are
-                creating in this tech space. We invest in
+                creating in this tech space. 
               </p>
             </Col>
           </Row>
