@@ -5,6 +5,12 @@ import { Container, Row, Col } from 'reactstrap';
 const About = () => {
     return (
       <div id="about">
+<<<<<<< HEAD
+        <JumbotronComponent
+          pageTitle="About Us"
+          lead="Learn all about The Black.Codes."
+        />
+=======
         <BackgroundVideo />
         
         <section id="the-then">
@@ -17,6 +23,7 @@ const About = () => {
             </Row>
           </Container>
         </section>
+>>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
 
         <section id="the-now">
           <Container>
@@ -82,7 +89,11 @@ const About = () => {
               </p>
             </Col>
           </Row>
+<<<<<<< HEAD
+        </Container>
+=======
         </section>
+>>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
       </div>
     );
 }

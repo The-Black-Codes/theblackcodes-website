@@ -222,6 +222,18 @@ h1, h2, h3 {
   }
 }
 
+///// Contact Page /////
+#contact{
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/v1588213237/web-images/IMG_20191103_135740_k0wrjf.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+  }
+}
+
+
 ///// Events Page /////
 #events {
   font-family: $para-font;
@@ -275,7 +287,28 @@ h1, h2, h3 {
     }
   }
 
+<<<<<<< HEAD
+//////// ABOUT PAGE ////////
+#about {
+  .jumbotron {
+    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/c_fill/web-images/IMG_2075_ghqibc.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 !important;
+    height: 400px;
+}
+}
+
+
+.about-section {
+  width: 100%;
+  //height: 100vh;
+  
+  .about-img {
+    background-image: url(./assets/images/portrait.jpg);
+=======
   #background-video {
+>>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
     width: 100%;
     height: 400px;
     background-color: black;
