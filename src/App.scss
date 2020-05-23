@@ -42,6 +42,7 @@ $btn-border: none;
 
 body {
   background: black;
+  color: white;
 }
 
 h1, h2, h3 {
@@ -375,7 +376,7 @@ h1, h2, h3 {
   
     h2 {
       font-size: $header-size;
-      font-family: $para-font;
+      font-family: $head-font;
       margin: 10px 0px;
       color: white;
     }
@@ -405,11 +406,11 @@ h1, h2, h3 {
     }
 
     .what-we-do {
-      background-color:$white;
+      background-color:black;
     }
 
     .why-we-do {
-      background-color: $white;
+      background-color: black;
     }
 
     .how-we-do {
