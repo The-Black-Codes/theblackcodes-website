@@ -5,12 +5,6 @@ import { Container, Row, Col } from 'reactstrap';
 const About = () => {
     return (
       <div id="about">
-<<<<<<< HEAD
-        <JumbotronComponent
-          pageTitle="About Us"
-          lead="Learn all about The Black.Codes."
-        />
-=======
         <BackgroundVideo />
         
         <section id="the-then">
@@ -18,12 +12,11 @@ const About = () => {
             <Row>
               <Col>
                 <h2>The Then</h2>
-                <h3><p>The Black Codes, sometimes called Black Laws, were laws governing the conduct of African Americans. The best known of them were passed in 1865 and 1866 by Southern states, after the American Civil War, in order to restrict African Americans' freedom, and to compel them to work for low wages.</p><p>The Black Codes were part of a larger pattern of whites trying to maintain political dominance and suppress the freedmen, newly emancipated African-American slaves. Black codes were essentially replacements for slave codes in those states. Before the war, Northern states that had prohibited slavery also enacted Black Codes: Connecticut, Ohio, Illinois, Indiana, Michigan, and New York enacted laws to discourage free blacks from residing in those states.</p><p>African Americans were denied equal political rights, including the right to vote, the right to attend public schools, and the right to equal treatment under the law. Some of the Northern states repealed such laws around the same time that the Civil War ended and slavery was abolished by constitutional amendment.</p></h3>
+                <p>The Black Codes, sometimes called Black Laws, were laws governing the conduct of African Americans. The best known of them were passed in 1865 and 1866 by Southern states, after the American Civil War, in order to restrict African Americans' freedom, and to compel them to work for low wages.</p><p>The Black Codes were part of a larger pattern of whites trying to maintain political dominance and suppress the freedmen, newly emancipated African-American slaves. Black codes were essentially replacements for slave codes in those states. Before the war, Northern states that had prohibited slavery also enacted Black Codes: Connecticut, Ohio, Illinois, Indiana, Michigan, and New York enacted laws to discourage free blacks from residing in those states.</p><p>African Americans were denied equal political rights, including the right to vote, the right to attend public schools, and the right to equal treatment under the law. Some of the Northern states repealed such laws around the same time that the Civil War ended and slavery was abolished by constitutional amendment.</p>
               </Col>
             </Row>
           </Container>
         </section>
->>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
 
         <section id="the-now">
           <Container>
@@ -89,11 +82,7 @@ const About = () => {
               </p>
             </Col>
           </Row>
-<<<<<<< HEAD
-        </Container>
-=======
         </section>
->>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
       </div>
     );
 }

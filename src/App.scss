@@ -40,6 +40,10 @@ $btn-height: 35px;
 $btn-radius: 5px;
 $btn-border: none;
 
+body {
+  background: black;
+}
+
 h1, h2, h3 {
   font-family: $head-font;
 }
@@ -48,11 +52,12 @@ h1, h2, h3 {
   color: $prime-color;
 }
 
+// Navigation
+
 .navigation {
   background: $prime-color;
 }
 
-// Navigation
 .navbar {
   height: 75px;
 
@@ -61,7 +66,7 @@ h1, h2, h3 {
     height: 60px;
     background-color: #fff;
     border-radius: 50%;
-    margin-left: 30px;
+    // margin-left: 30px;
     // position: absolute;
     top: 30px;
     border: medium solid $prime-color;
@@ -71,7 +76,7 @@ h1, h2, h3 {
   .nav-link {
     color: white !important;
     font-size: $link-size;
-    font-weight: bold;
+    font-weight: 800;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
@@ -130,17 +135,13 @@ h1, h2, h3 {
 #home {
   .jumbotron {
     background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);
-    height: 600px;
-
-    .display-3 {
-      padding-top: 120px;
-    }
+    height: 80vh;
   }
 
   #home-about {
     padding: 70px 0px;
-    background-color: black;
-    color: white;
+    // background-color: black;
+    // color: white;
   
     .container {
       align-self: center;
@@ -159,7 +160,7 @@ h1, h2, h3 {
     h2 {
       margin-bottom: 25px;
       color: white;
-      font-family: 'Raleway', sans-serif;
+      // font-family: 'Raleway', sans-serif;
     }
 
     .card {
@@ -222,6 +223,8 @@ h1, h2, h3 {
   }
 }
 
+////// Home Page End /////
+
 ///// Contact Page /////
 #contact{
   .jumbotron {
@@ -233,6 +236,7 @@ h1, h2, h3 {
   }
 }
 
+// Contact Page End
 
 ///// Events Page /////
 #events {
@@ -247,14 +251,14 @@ h1, h2, h3 {
   }
   
   h1 {
-    font-weight: 500;
-    font-family: $para-font;
+    // font-weight: 500;
+    // font-family: $;
     padding: 50px 0px;
   }
 
   h2 {
     padding: 50px 0px;
-    font-family: $para-font;
+    // font-family: $para-font;
   }
 
   h4 {
@@ -267,6 +271,10 @@ h1, h2, h3 {
   }
 }
 
+///// Events Page End /////
+
+///// About Page /////
+
 #about {
   #the-then {
     padding: 50px 0px;
@@ -275,40 +283,19 @@ h1, h2, h3 {
 
     h2 {
       text-align: center;
-      font-family: $para-font;
-      font-size: $header-size;
+      font-family: $head-font;
+      font-size: $alt-header;
       margin-bottom: 40px;
     }
 
-    h3 {
+    p {
       text-align: justify;
-      font-family: $para-font;
+      font-size: $alt-header;
       line-height: 1.5em;
     }
   }
 
-<<<<<<< HEAD
-//////// ABOUT PAGE ////////
-#about {
-  .jumbotron {
-    background: $gradient-primary, url(https://res.cloudinary.com/the-black-codes/image/upload/c_fill/web-images/IMG_2075_ghqibc.jpg);
-    background-position: center center;
-    background-size: cover;
-    border-radius: 0 !important;
-    height: 400px;
-}
-}
-
-
-.about-section {
-  width: 100%;
-  //height: 100vh;
-  
-  .about-img {
-    background-image: url(./assets/images/portrait.jpg);
-=======
   #background-video {
->>>>>>> 55fe8def1700834d8c43a9b75539941341708f73
     width: 100%;
     height: 400px;
     background-color: black;
@@ -330,11 +317,11 @@ h1, h2, h3 {
       padding: 0px;
 
       h1 {
-        font-size: 4.5em;
+        font-size: $header-size;
         padding-top: 120px;
       }
 
-      h1, h3 {
+      h3 {
         font-family: $para-font;
       }
 
@@ -362,8 +349,8 @@ h1, h2, h3 {
     }
 
     h2 {
-      font-family: $para-font;
-      font-size: $header-size;
+      font-family: $head-font;
+      font-size: $alt-header;
       margin: 40px 0px;
       text-align: center;
     }
@@ -456,7 +443,7 @@ h1, h2, h3 {
   }
 
   h3 {
-    font-family: $para-font;
+    // font-family: $para-font;
     padding-bottom: 15px;
   }
 
@@ -471,14 +458,11 @@ h1, h2, h3 {
   }
 }
 
-// Footer
+///// Footer /////
+
 .page-footer {
   background-color: $prime-color;
   color: white;
-
-  h3 {
-    font-family: $para-font;
-  }
 
   a {
     color: white;
@@ -488,6 +472,10 @@ h1, h2, h3 {
     color: #9966cc;
   }
 
+  div {
+    align-items: center;
+  }
+  
   .newsletter {
     border: none;
     width: 400px;
@@ -499,6 +487,8 @@ h1, h2, h3 {
     background-color: $secondary-color;
   }
 }
+
+///// Footer End /////
 
 
 ////////////// We Do Section //////////////
@@ -526,7 +516,7 @@ h1, h2, h3 {
     background-color: #fff;
     border-radius: 50%;
     margin-left: 5px;
-    position: absolute;
+    // position: absolute;
     top: 25px;
     border: medium solid $prime-color;
   }
@@ -536,6 +526,7 @@ h1, h2, h3 {
   }
 
   .display-3 {
+    padding-top: 120px;
     font-size: 2.5em !important;
   }
 
