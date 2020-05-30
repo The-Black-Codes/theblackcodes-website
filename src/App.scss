@@ -136,7 +136,7 @@ h1, h2, h3 {
 #home {
   .jumbotron {
     background-image: $gradient-primary, url(./assets/images/wide-angle_kindful.jpg);
-    height: 80vh;
+    height: 90vh;
   }
 
   #home-about {
@@ -214,12 +214,8 @@ h1, h2, h3 {
     margin: 50px 0px;
     text-align: center;
 
-    h2 {
-      font-family: $para-font;
-    }
-
-    h3 {
-      font-family: $para-font;
+    .card {
+      background-color: black;
     }
   }
 }
@@ -323,7 +319,7 @@ h1, h2, h3 {
       }
 
       h3 {
-        font-family: $para-font;
+        font-family: $head-font;
       }
 
       hr {
@@ -394,7 +390,6 @@ h1, h2, h3 {
 
     h2 {
       text-align: center;
-      font-family: $para-font;
     }
 
     .who-are-we, .what-we-do, .why-we-do, .how-we-do {
