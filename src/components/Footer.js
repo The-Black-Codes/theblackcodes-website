@@ -11,7 +11,7 @@ const FooterComponent = (props) => {
         {/* Grid row */}
         <div className="row">
           {/* Grid column */}
-          <div className="col-md-6 col-sm-6 col-xs-6 py-2">
+          <div className="col py-2">
             <div className="my-4 text-center">
               <h3 className="mb-4">About The Black.Codes</h3>
               <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed. The tech field is lacking a minority presence and we are changing that narrative through our platform.
@@ -40,9 +40,6 @@ const FooterComponent = (props) => {
               <FontAwesomeIcon className='mx-3' size='2x' icon={faGithub} />
               </a>
             </div>
-          </div>  
-          <div className="col-md-6 col-sm-6 col-xs-6">
-            <iframe className="newsletter mt-3" title="Join Newsletter" src="https://cdn.forms-content.sg-form.com/ee97ef5b-8b13-11ea-a909-0a922955d517"/>
           </div>
           {/* Grid column */}
         </div>
