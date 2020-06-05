@@ -16,10 +16,10 @@ server.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
   
   const client = nodemailer.createTransport({
-    service: 'SendGrid',
+    service: 'gmail',
     auth: {
       user: process.env.SG_USER,
-      pass: process.env.SG_PASS
+      pass: process.env.G_PASS
     }
   });
 
@@ -34,14 +34,14 @@ server.post('/contact', async (req, res) => {
   }, async (err, info) => {
     if (err) {
       console.log(err);
-    } else {
-      await axios.post("https://hooks.slack.com/services/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", {
-        username: 'The Black.Codes Contact Form',
-        text: `Name: ${name} \n Email: ${email} \n Message: ${message}`
-      })
-      .catch(e => res.json({ err: true, message: e }));
-      return res.json({ err: null, message: 'Done!!' });
     }
+
+    await axios.post("https://hooks.slack.com/services/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", {
+      username: 'The Black.Codes Contact Form',
+      text: `Name: ${name} \n Email: ${email} \n Message: ${message}`
+    })
+    .catch(e => res.json({ err: true, message: e }));
+    return res.json({ err: null, message: 'Done!!' });
   });
 });
 

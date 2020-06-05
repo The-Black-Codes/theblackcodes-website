@@ -9,6 +9,8 @@ toast.configure()
 
 const ContactForm = _ => {
   const [form, setForm] = useState({});
+  const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:8001' : 'https://api.theblackcodes.org';
+  
   const notify = () => toast("Form successfully sent! We will contact you soon.", { 
     autoClose: 5000,
     position: 'top-right',
@@ -25,7 +27,7 @@ const ContactForm = _ => {
   }
 
   const submitForm = async () => {
-    const sendToSlack = await axios.post('https://api.theblackcodes.org/contact', form, {
+    const sendToSlack = await axios.post(`${apiUrl}/contact`, form, {
       headers: {
         'content-type': 'application/json'
       }
