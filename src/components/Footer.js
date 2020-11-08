@@ -14,7 +14,7 @@ const FooterComponent = (props) => {
           <div className="col py-2">
             <div className="my-4 text-center">
               <h3 className="mb-4">About The Black Codes</h3>
-              <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed. The tech field is lacking a minority presence and we are changing that narrative through our platform.
+              <p>The Black Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed. The tech field is lacking a minority presence and we are changing that narrative through our platform.
               </p>
             </div>
             <div className="my-5 text-center">
@@ -24,7 +24,7 @@ const FooterComponent = (props) => {
                 <FontAwesomeIcon className='mx-3' size='2x' icon={faFacebook} />
               </a>
               {/* Twitter */}
-              <a href="https://twitter.com/theblackcodes1" className="tw-ic">
+              <a href="https://twitter.com/_theblackcodes" className="tw-ic">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faTwitter} />
               </a>
               {/* Linkedin */}
