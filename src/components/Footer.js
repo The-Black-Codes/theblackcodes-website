@@ -13,7 +13,7 @@ const FooterComponent = (props) => {
           {/* Grid column */}
           <div className="col py-2">
             <div className="my-4 text-center">
-              <h3 className="mb-4">About The Black.Codes</h3>
+              <h3 className="mb-4">About The Black Codes</h3>
               <p>The Black.Codes represents a resource hub for the black tech community. We strive to empower and position our community to be leaders in the tech industry by providing the resources they need to succeed. The tech field is lacking a minority presence and we are changing that narrative through our platform.
               </p>
             </div>
@@ -48,7 +48,7 @@ const FooterComponent = (props) => {
     
       {/* <!-- Copyright --> */}
       <div className="footer-copyright text-center py-3">
-        <a href="https://theblackcodes.org/"> The Black.Codes</a> ||  © 2020 Copyright
+        <a href="https://theblackcodes.org/"> The Black Codes</a> ||  © 2020 Copyright
       </div>
       {/* <!-- Copyright --> */}
     

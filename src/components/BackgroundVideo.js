@@ -10,7 +10,7 @@ const BackgroundVideo = () => {
       </video>
 
       <div className="content">
-        <h1>About The Black.Codes</h1>
+        <h1>About The Black Codes</h1>
         <hr />
         <h3>The Then and The Now.</h3>
       </div>
