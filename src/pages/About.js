@@ -27,7 +27,7 @@ const About = () => {
               <Col md={7} xs={12}>
                 <h2>The Now</h2>
                 <p className="about-info">
-                We decided to take the term and give it a better meaning. The Black.Codes is a resource hub for the black tech community. 
+                We decided to take the term and give it a better meaning. The Black Codes is a resource hub for the black tech community. 
                 We strive to empower and position our community to be leaders in the tech industry. 
                 The tech field is lacking a minority presence. We are changing that narrative through our platform.
                 </p>
