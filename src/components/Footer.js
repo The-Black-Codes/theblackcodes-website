@@ -20,27 +20,27 @@ const FooterComponent = (props) => {
             <div className="my-5 text-center">
               <h3 className="my-4">Follow Us</h3>
               {/* Facebook */}
-              <a href="https://www.facebook.com/theblackcodes01/" className="fb-ic">
+              <a href="https://www.facebook.com/theblackcodes01/" className="fb-ic" alt="Facebook">
                 <FontAwesomeIcon className='mx-3' size='2x' icon={faFacebook} />
               </a>
               {/* Twitter */}
-              <a href="https://twitter.com/_theblackcodes" className="tw-ic">
+              <a href="https://twitter.com/_theblackcodes" className="tw-ic" alt="Twitter">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faTwitter} />
               </a>
               {/* Linkedin */}
-              <a href="https://www.linkedin.com/company/the-black-codes/?viewAsMember=true" className="li-ic">
+              <a href="https://www.linkedin.com/company/the-black-codes/?viewAsMember=true" className="li-ic" alt="LinkedIn">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faLinkedin} />
               </a>
               {/* Instagram */}
-              <a href="https://www.instagram.com/theblack.codes/" className="ins-ic">
+              <a href="https://www.instagram.com/theblack.codes/" className="ins-ic" alt="Instagram">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faInstagram} />
               </a>
               {/* Github */}
-              <a href="https://github.com/The-Black-Codes">
+              <a href="https://github.com/The-Black-Codes" alt="Github">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faGithub} />
               </a>
               {/* Github */}
-              <a href="https://youtube.com/channel/UCO48K92fIhj9XoAVv52jAqQ">
+              <a href="https://youtube.com/channel/UCO48K92fIhj9XoAVv52jAqQ" alt="YouTube">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faYoutube} />
               </a>
             </div>
