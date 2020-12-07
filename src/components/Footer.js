@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faInstagram, faTwitter, faFacebook, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faInstagram, faTwitter, faFacebook, faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 
 const FooterComponent = (props) => {
     return (
@@ -38,6 +38,10 @@ const FooterComponent = (props) => {
               {/* Github */}
               <a href="https://github.com/The-Black-Codes">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faGithub} />
+              </a>
+              {/* Github */}
+              <a href="https://youtube.com/channel/UCO48K92fIhj9XoAVv52jAqQ">
+              <FontAwesomeIcon className='mx-3' size='2x' icon={faYoutube} />
               </a>
             </div>
           </div>
