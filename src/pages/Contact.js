@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
-import {faInstagram, faTwitter, faFacebook, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faInstagram, faTwitter, faFacebook, faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 
 import JumbotronComponent from '../components/Jumbotron';
 import ContactForm from '../components/ContactForm';
@@ -34,11 +34,12 @@ const Contact = () => {
               <FontAwesomeIcon size='2x' className="mx-2" icon={faTwitter} />
               <FontAwesomeIcon size='2x' className="mx-2" icon={faLinkedin} />
               <FontAwesomeIcon size='2x' className="mx-2" icon={faGithub} />
+              <FontAwesomeIcon size='2x' className="mx-2" icon={faYoutube} />
             </div>
           </div>
         </Col>
         <Col xs={12} md={6} className="my-5 pl-5">
-          <h3 className="mb-4">Stay in touch with The Black.Codes</h3>
+          <h3 className="mb-4">Stay in touch with The Black Codes</h3>
           <ContactForm  />
         </Col>
       </Row>
