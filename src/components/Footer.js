@@ -39,7 +39,7 @@ const FooterComponent = (props) => {
               <a href="https://github.com/The-Black-Codes" alt="Github">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faGithub} />
               </a>
-              {/* Github */}
+              {/* YouTube */}
               <a href="https://youtube.com/channel/UCO48K92fIhj9XoAVv52jAqQ" alt="YouTube">
               <FontAwesomeIcon className='mx-3' size='2x' icon={faYoutube} />
               </a>
