@@ -52,7 +52,7 @@ server.post('/contact', async (req, res) => {
   } catch (err) {
     console.error(err);
     return res.json({ err: true, message: err });
-  });
+  }
 });
 
 server.listen(8001, _ => console.log('Running on port 8001'));
