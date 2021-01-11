@@ -13,6 +13,8 @@
 /api/.env
 api/.env
 .env
+key.json
+/api/key.json
 
 # misc
 .DS_Store
