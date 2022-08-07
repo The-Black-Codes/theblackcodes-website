@@ -1,11 +1,11 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import '../App.scss';
 
-const JumbotronComponent = (props) => {
+const HeaderComponent = (props) => {
   const isButton = props.buttonText || '';
   return (
-    <Jumbotron>
+    <div className="header">
       <h1 className="display-3">{props.pageTitle}</h1>
       <hr className="my-3" />
       { isButton && (
@@ -14,8 +14,8 @@ const JumbotronComponent = (props) => {
         </p>
       )
       }
-    </Jumbotron>
+    </div>
   );
 };
 
-export default JumbotronComponent;
+export default HeaderComponent;

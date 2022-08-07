@@ -6,8 +6,8 @@ import './App.scss';
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
-  Switch,
+  Routes,
+  Navigate
 } from 'react-router-dom';
 
 import Navbar from "./components/NavBar";
@@ -20,12 +20,12 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-          <Switch>
+          <Routes>
             {
               routes.map((route, index) => <Route key={index} path={route.path} component={route.component} />)
             }
-            <Redirect from="*" to="/home" />
-          </Switch>
+            <Navigate from="*" to="/home" />
+          </Routes>
         <FooterComponent />
       </Router>
     </div>

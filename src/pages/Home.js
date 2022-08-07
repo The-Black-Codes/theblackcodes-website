@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'reactstrap';
 
 import CardComponent from '../components/Card';
 import HomeEventCardComponent from '../components/HomeEventCard';
-import JumbotronComponent from '../components/Jumbotron';
+import HeaderComponent from '../components/Jumbotron';
 import { organizers } from '../db/organizers';
 import { events } from '../db/events';
 import content from "../siteContent.json";
@@ -11,7 +11,7 @@ import content from "../siteContent.json";
 const Home = (props) => {
   return (
     <div id="home">
-      <JumbotronComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
+      <HeaderComponent id="homeJumbotron" pageTitle="Culture, Community, Code" lead="Your Platform for Black Tech Culture" buttonText="Learn More" {...props} />
 
       <section id="home-about">
         <div className="container">
