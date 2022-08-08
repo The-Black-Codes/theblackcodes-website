@@ -2054,9 +2054,9 @@
     "@types/react" "*"
 
 "@types/react@*":
-  "integrity" "sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.15.tgz"
-  "version" "18.0.15"
+  "integrity" "sha512-3vX1dzVucqc2nhXtzyaParTIIRZeNbisRqLE7QdeLomVybEyeiuAouzZXgz71P+2kbJOqj3dy0fzoATg2I06GQ=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.16.tgz"
+  "version" "18.0.16"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -8922,10 +8922,10 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react-toastify@^9.0.7":
-  "integrity" "sha512-UG5P/2F/fYdbK+v3XRWHM6xfMkWeLM+k2swKvwU8oO9DXx31GkeoH7Z6slBTkavZ0VjoQ+n/YD6xOBqEwN7HRg=="
-  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.7.tgz"
-  "version" "9.0.7"
+"react-toastify@^9.0.8":
+  "integrity" "sha512-EwM+teWt49HSHx+67qI08yLAW1zAsBxCXLCsUfxHYv1W7/R3ZLhrqKalh7j+kjgPna1h5LQMSMwns4tB4ww2yQ=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.8.tgz"
+  "version" "9.0.8"
   dependencies:
     "clsx" "^1.1.1"
 
